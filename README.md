@@ -6,12 +6,12 @@ Code for Website taken from: https://github.com/smart-on-fhir/patient-browser
 
 ## Setup
 ~~~~
-cd /patient-browser-master/
+cd patient-browser-master/
 npm install
 ~~~~
 
 ## Run
 ~~~~
-cd /patient-browser-master/build
+cd patient-browser-master/build
 npm start 
 ~~~~
