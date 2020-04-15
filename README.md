@@ -2,16 +2,26 @@
 
 see NLP_Final_Project_Proposal.pdf for project details
 
-Code for Website taken from: https://github.com/smart-on-fhir/patient-browser
+Code for Web App taken from: https://github.com/smart-on-fhir/patient-browser
+Code for Seq2SQL taken from: https://github.com/xiaojunxu/SQLNet
 
-## Setup
+##Web App
+
+### Setup
 ~~~~
 cd /patient-browser-master/
 npm install
 ~~~~
 
-## Run
+### Run
 ~~~~
 cd /patient-browser-master/build
 npm start 
 ~~~~
+
+
+##Seq2SQL
+
+### Setup
+
+### Run
