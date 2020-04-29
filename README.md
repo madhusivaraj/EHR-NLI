@@ -1,9 +1,8 @@
-# EHR-NLI
+# Natural Language Interface for Patients’ Electronic Health Records
 
-See NLP_Final_Project_Proposal.pdf for project proposal. <br>
-See NLP_Final_Project_Milestone.pdf for milestone report.
+Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). 
 
-# Seq2SQL
+## Seq2SQL
 
 @Revanth insert stuff here
 
@@ -17,7 +16,7 @@ See NLP_Final_Project_Milestone.pdf for milestone report.
 
 ~~~~
 
-# Natural Language Generation
+## Natural Language Generation
 
 For this portion of our project, we used [RosaeNLG](https://rosaenlg.org/rosaenlg/1.14.3/index.html), an open-source (MIT) Natural Language Generation (NLG) library written in JavaScript, based on the Pug template engine. 
 RosaeNLG is the first open-source NLG library which is easy to use and complete enough to write real life NLG applications. It can be run both server side (node.js) and client side, in a browser.
@@ -34,7 +33,7 @@ npx rosaenlg-cli -l lang -w <template_filepath>
 ex: npx rosaenlg-cli -l en_US -w templates_malesmokers/male_smokers_over45.pug
 ~~~~
 
-# Patient Browser
+## Patient Browser
 
 Code for Patient Browser taken from: https://github.com/smart-on-fhir/patient-browser
 
