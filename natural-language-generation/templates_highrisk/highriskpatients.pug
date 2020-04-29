@@ -1,0 +1,125 @@
+
+-
+  let patients = [
+    {
+      "use": "official",
+      "given": [
+        "Adolfo777"
+      ],
+      "family": "Stokes453",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Alvaro283"
+      ],
+      "family": "Zulauf375",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Aldo414"
+      ],
+      "family": "Schoen8",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Agustin437"
+      ],
+      "family": "Crona259",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Agustín529"
+      ],
+      "family": "Bahena335",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Alphonso102"
+      ],
+      "family": "Jaskolski867",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "family": "Dickinson688",
+      "prefix": [
+        "Mr."
+      ],
+      "use": "official",
+      "given": [
+        "Anderson154"
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Abdul218"
+      ],
+      "family": "Trantow673",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "family": "Moore224",
+      "prefix": [
+        "Mr."
+      ],
+      "use": "official",
+      "given": [
+        "Alfredo17"
+      ]
+    },
+    {
+      "use": "official",
+      "given": [
+        "Andreas188"
+      ],
+      "family": "Labadie908",
+      "prefix": [
+        "Mr."
+      ]
+    },
+    {
+      "given": [
+        "Alberto639"
+      ],
+      "family": "Ceballos171",
+      "prefix": [
+        "Mr."
+      ],
+      "use": "official"
+    }
+
+
+  ];
+
+
+
+
+
+| The high risk patients are
+eachz p in patients with { separator: ', ', last_separator: 'and' }
+  | #{p.given} #{p.family}
+| .

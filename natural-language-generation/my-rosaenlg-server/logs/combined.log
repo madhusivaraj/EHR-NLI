@@ -1,0 +1,2 @@
+{"action":"startup","message":"trying to use only memory","level":"info","timestamp":"2020-04-29T01:03:03.332Z"}
+{"action":"startup","message":"App listening on the port 5000","level":"info","timestamp":"2020-04-29T01:03:03.341Z"}
