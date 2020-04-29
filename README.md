@@ -1,27 +1,51 @@
 # EHR-NLI
 
-see NLP_Final_Project_Proposal.pdf for project details
+See NLP_Final_Project_Proposal.pdf for project proposal. <br>
+See NLP_Final_Project_Milestone.pdf for milestone report.
 
-Code for Web App taken from: https://github.com/smart-on-fhir/patient-browser
-Code for Seq2SQL taken from: https://github.com/xiaojunxu/SQLNet
+# Seq2SQL
 
-##Web App
+@Revanth insert stuff here
 
 ### Setup
 ~~~~
-cd patient-browser-master/
+
+~~~~
+
+### Run
+~~~~
+
+~~~~
+
+# Natural Language Generation
+
+For this portion of our project, we used [RosaeNLG](https://rosaenlg.org/rosaenlg/1.14.3/index.html), an open-source (MIT) Natural Language Generation (NLG) library written in JavaScript, based on the Pug template engine. 
+RosaeNLG is the first open-source NLG library which is easy to use and complete enough to write real life NLG applications. It can be run both server side (node.js) and client side, in a browser.
+
+### Setup
+~~~~
+cd /natural-language-generation/
 npm install
 ~~~~
 
 ### Run
 ~~~~
-cd patient-browser-master/build
-npm start 
+npx rosaenlg-cli -l lang -w <template_filepath>
+ex: npx rosaenlg-cli -l en_US -w templates_malesmokers/male_smokers_over45.pug
 ~~~~
 
+# Patient Browser
 
-##Seq2SQL
+Code for Patient Browser taken from: https://github.com/smart-on-fhir/patient-browser
 
 ### Setup
+~~~~
+cd /patient-browser-master/
+npm install
+~~~~
 
 ### Run
+~~~~
+cd /patient-browser-master/build
+npm start 
+~~~~
