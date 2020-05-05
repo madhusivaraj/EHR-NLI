@@ -1,21 +1,26 @@
 # Natural Language Interface for Patients’ Electronic Health Records
 
-Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). <br>
-Final Report can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Report.pdf).
+Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). 
 
 ## Seq2SQL
 
 @Revanth insert stuff here
 
 ### Setup
-~~~~
+Requires a GPU to run.
 
-~~~~
+Dataset require
+- MIMIC-SQL  (public)
+- MIMIC III (private due to HIPAA-compliance)
 
 ### Run
-~~~~
 
-~~~~
+
+- ```Training:``` python TREQS/main.py 
+
+- ```Validate:``` python TREQS/main.py --task validate
+
+- ```Test:``` python TREQs/main.py --task test
 
 ## Natural Language Generation
 
