@@ -4,8 +4,6 @@ Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/
 
 ## Seq2SQL
 
-@Revanth insert stuff here
-
 ### Setup
 Requires a GPU to run.
 
