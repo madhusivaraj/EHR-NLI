@@ -1,6 +1,7 @@
 # Natural Language Interface for Patients’ Electronic Health Records
 
-Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). 
+Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). <br>
+Final Report can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Report.pdf).
 
 ## Seq2SQL
 
