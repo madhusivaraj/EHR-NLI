@@ -1,0 +1,30 @@
+
+-
+  let patients = [
+    {
+        "use": "official",
+        "given": [
+            "Adolfo777"
+        ],
+        "family": "Stokes453",
+        "prefix": [
+            "Mr."
+        ]
+    },
+    {
+        "use": "official",
+        "given": [
+            "Alvaro283"
+        ],
+        "family": "Zulauf375",
+        "prefix": [
+            "Mr."
+        ]
+    }
+  ];
+
+
+| The male smokers over the age 45 are
+eachz p in patients with { separator: ', ', last_separator: 'and' }
+  | #{p.given} #{p.family}
+| .

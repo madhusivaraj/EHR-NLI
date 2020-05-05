@@ -1,0 +1,5 @@
+mixin colors
+  | #[+value(patient, {'NOT_IT':true})]'s available #[+syn('colors', 'tints', 'tones')]
+  | are
+  eachz color in patient.colors with { separator:',', last_separator:'and', end:'.' }
+    | #{color}

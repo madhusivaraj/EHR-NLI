@@ -1,0 +1,10 @@
+mixin itHasADisplay
+  | #[+value(patient)] has a display with
+
+mixin display
+  itemz { begin_with_general: 'itHasADisplay', separator:',', last_separator:'and', mix:true }
+    item
+      | a physical size of #[+value(patient.displaySize)] inches
+    item
+      | a screen-to-body ratio of #[+value(patient.screenRatio)] %
+

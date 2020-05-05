@@ -1,0 +1,13 @@
+mixin patient_ref(obj, params)
+  | #{obj.name}
+
+mixin patient_refexpr(obj, params)
+  synz {mode:'sequence'}
+    syn
+      | the patient
+    syn
+      | this patient
+    syn
+      if !hasFlag(params, 'NOT_IT')
+        | it
+

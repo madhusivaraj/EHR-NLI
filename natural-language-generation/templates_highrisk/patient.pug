@@ -1,0 +1,24 @@
+
+mixin patient_chunks
+  itemz {separator: '.', end:'.', mix:true}
+    item
+      | #[+colors]
+    item
+      | #[+display]
+
+      if !hasSaid('BATTERY')
+        |
+        recordSaid('BATTERY')
+    item
+      if !hasSaid('BATTERY')
+        |
+        recordSaid('BATTERY')
+
+
+mixin phone(phone)
+  -
+    patient.ref = 'patient_ref';
+    patient.refexpr = 'patient_refexpr';
+  | #[+intro] .
+  | #[+patient_chunks]
+  deleteSaid('BATTERY')
