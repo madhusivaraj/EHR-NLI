@@ -1,0 +1,135 @@
+SQL Query:
+
+SELECT DISTINCT(p.id), p.resource#>'{name,0}'
+FROM patient p
+JOIN observation o ON o.resource#>>'{subject,id}' = p.id
+WHERE (o.resource @> '{"code": {"coding": [{"code": "72166-2"}]}}'::jsonb) -- LOINC: Smoking status
+  AND ((o.resource @> '{"value": {"CodeableConcept": { "coding": [{"code": "449868002"}]}}}') -- SNOMED: Current every day smoker
+       OR (o.resource @> '{"value": {"CodeableConcept": { "coding": [{"code": "8517006"}]}}}')) -- SNOMED: Former smoker
+  AND (extract(year from age(now(), (p.resource->>'birthDate')::date)) > 45) -- patient's age > 45
+  AND (p.resource->>'gender' = 'male'); -- patient gender is male
+
+
+Output Format: [Patient ID][patient.resource]
+
+05a6e8f8-9c97-4a73-b6d6-efdeab222072	
+{
+  "use": "official",
+  "given": [
+    "Adolfo777"
+  ],
+  "family": "Stokes453",
+  "prefix": [
+    "Mr."
+  ]
+}
+06e426bc-a758-423e-9b7c-35470c3316f9	
+{
+  "use": "official",
+  "given": [
+    "Alvaro283"
+  ],
+  "family": "Zulauf375",
+  "prefix": [
+    "Mr."
+  ]
+}
+083e4104-146b-4447-b9cf-ee8e6244fd17	
+{
+  "use": "official",
+  "given": [
+    "Aldo414"
+  ],
+  "family": "Schoen8",
+  "prefix": [
+    "Mr."
+  ]
+}
+09cac66c-4210-4894-93c2-4e13285ca3a1	
+{
+  "use": "official",
+  "given": [
+    "Agustin437"
+  ],
+  "family": "Crona259",
+  "prefix": [
+    "Mr."
+  ]
+}
+13b358ec-60a1-492a-9a98-3ddae56c8049	
+{
+  "use": "official",
+  "given": [
+    "Agustín529"
+  ],
+  "family": "Bahena335",
+  "prefix": [
+    "Mr."
+  ]
+}
+20c38669-58ae-4a5b-a768-c0fac444f778	
+{
+  "use": "official",
+  "given": [
+    "Alphonso102"
+  ],
+  "family": "Jaskolski867",
+  "prefix": [
+    "Mr."
+  ]
+}
+24fafedb-b30d-4f9f-9d06-5921eeba275b	
+{
+  "family": "Dickinson688",
+  "prefix": [
+    "Mr."
+  ],
+  "use": "official",
+  "given": [
+    "Anderson154"
+  ]
+}
+273737b8-d294-4b3b-b44b-b540019688dc	
+{
+  "use": "official",
+  "given": [
+    "Abdul218"
+  ],
+  "family": "Trantow673",
+  "prefix": [
+    "Mr."
+  ]
+}
+2e6378ba-be13-4e69-b097-53fc1a89baea	
+{
+  "family": "Moore224",
+  "prefix": [
+    "Mr."
+  ],
+  "use": "official",
+  "given": [
+    "Alfredo17"
+  ]
+}
+3583373e-ca52-418c-95f1-dc677e7f5d79	
+{
+  "use": "official",
+  "given": [
+    "Andreas188"
+  ],
+  "family": "Labadie908",
+  "prefix": [
+    "Mr."
+  ]
+}
+412e8487-13c1-4e66-ba37-4768efe05bde	
+{
+  "given": [
+    "Alberto639"
+  ],
+  "family": "Ceballos171",
+  "prefix": [
+    "Mr."
+  ],
+  "use": "official"
+}

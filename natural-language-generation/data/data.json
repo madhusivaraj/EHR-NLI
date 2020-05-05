@@ -1,0 +1,694 @@
+[
+  {
+  "meta": {
+    "profile": [
+      "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-Patient"
+    ]
+  },
+  "telecom": [
+    {
+      "use": "home",
+      "value": "555-696-1511",
+      "system": "phone"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "text": "English",
+        "coding": [
+          {
+            "code": "en-US",
+            "system": "urn:ietf:bcp:47",
+            "display": "English"
+          }
+        ]
+      }
+    }
+  ],
+  "maritalStatus": {
+    "text": "S",
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "display": "S",
+        "code": "S"
+      }
+    ]
+  },
+  "multipleBirth": {
+    "boolean": false
+  },
+  "id": "d3af67c9-0c02-45f2-bc91-fea45af3ee83",
+  "birthDate": "1955-06-27",
+  "gender": "male",
+  "address": [
+    {
+      "state": "Massachusetts",
+      "country": "US",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": -71.024638
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": 42.082543
+            }
+          ]
+        }
+      ],
+      "postalCode": "02301",
+      "city": "Brockton",
+      "line": [
+        "730 Schoen Center Apt 8"
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "display": "White",
+            "code": "2106-3",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2186-5",
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "Not Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+      "valueString": "Sharolyn456 Harris789"
+    },
+    {
+      "valueCode": "M",
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
+      "valueAddress": {
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "US"
+      }
+    },
+    {
+      "valueBoolean": true,
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-FictionalPerson-extension"
+    },
+    {
+      "valueHumanName": {
+        "text": "Samual455 Hickle134"
+      },
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-FathersName-extension"
+    },
+    {
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension",
+      "valueString": "999-81-4006"
+    },
+    {
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-Person-extension",
+      "valueReference": {
+        "reference": "Basic/bad528f4-fa8a-4f5b-a478-1b630be88847"
+      }
+    },
+    {
+      "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+      "valueDecimal": 0
+    },
+    {
+      "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+      "valueDecimal": 62
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://github.com/synthetichealth/synthea",
+      "value": "803f5907-5427-4930-a093-1a95190de7fd"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://hl7.org/fhir/v2/0203",
+            "display": "Medical Record Number"
+          }
+        ],
+        "text": "Medical Record Number"
+      },
+      "value": "803f5907-5427-4930-a093-1a95190de7fd",
+      "system": "http://hospital.smarthealthit.org"
+    },
+    {
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "type": {
+        "text": "Social Security Number",
+        "coding": [
+          {
+            "code": "SB",
+            "system": "http://hl7.org/fhir/identifier-type",
+            "display": "Social Security Number"
+          }
+        ]
+      },
+      "value": "999-81-4006"
+    },
+    {
+      "type": {
+        "text": "Driver's License",
+        "coding": [
+          {
+            "code": "DL",
+            "system": "http://hl7.org/fhir/v2/0203",
+            "display": "Driver's License"
+          }
+        ]
+      },
+      "value": "S99988684",
+      "system": "urn:oid:2.16.840.1.113883.4.3.25"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "PPN",
+            "system": "http://hl7.org/fhir/v2/0203",
+            "display": "Passport Number"
+          }
+        ],
+        "text": "Passport Number"
+      },
+      "value": "X17148555X",
+      "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber"
+    }
+  ],
+  "resourceType": "Patient",
+  "name": [
+    {
+      "use": "official",
+      "given": [
+        "Abram53"
+      ],
+      "family": "Hickle134",
+      "prefix": [
+        "Mr."
+      ]
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.0.0-33-g3ab9839e\n .   Person seed: -7948439064728439692  Population seed: 1534165146158</div>",
+    "status": "generated"
+  }
+},
+096724e0-4f46-4af9-8d25-2e5d6ec47526	0	2020-04-21T13:50:08.831343Z	Patient	created
+{
+  "meta": {
+    "profile": [
+      "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-Patient"
+    ]
+  },
+  "maritalStatus": {
+    "text": "M",
+    "coding": [
+      {
+        "code": "M",
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "display": "M"
+      }
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.0.0-33-g3ab9839e\n .   Person seed: -2882657631503938079  Population seed: 1534165146158</div>",
+    "status": "generated"
+  },
+  "address": [
+    {
+      "city": "Tewksbury",
+      "line": [
+        "501 Kling Center"
+      ],
+      "state": "Massachusetts",
+      "country": "US",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": -71.227845
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": 42.612088
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "text": "English",
+        "coding": [
+          {
+            "code": "en-US",
+            "system": "urn:ietf:bcp:47",
+            "display": "English"
+          }
+        ]
+      }
+    }
+  ],
+  "resourceType": "Patient",
+  "multipleBirth": {
+    "boolean": false
+  },
+  "gender": "male",
+  "telecom": [
+    {
+      "use": "home",
+      "value": "555-683-7707",
+      "system": "phone"
+    }
+  ],
+  "deceased": {
+    "dateTime": "2002-12-25T17:36:01+03:00"
+  },
+  "birthDate": "1913-01-22",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "display": "White",
+            "code": "2106-3"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "display": "Not Hispanic or Latino",
+            "code": "2186-5",
+            "system": "urn:oid:2.16.840.1.113883.6.238"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+      "valueString": "Jena102 Ferry570"
+    },
+    {
+      "valueCode": "M",
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
+      "valueAddress": {
+        "country": "US",
+        "city": "Springfield",
+        "state": "Massachusetts"
+      }
+    },
+    {
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-FictionalPerson-extension",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-FathersName-extension",
+      "valueHumanName": {
+        "text": "Jack927 Bins636"
+      }
+    },
+    {
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension",
+      "valueString": "999-74-6911"
+    },
+    {
+      "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-Person-extension",
+      "valueReference": {
+        "reference": "Basic/391418f2-865f-489c-9cc3-b76e10566366"
+      }
+    },
+    {
+      "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+      "valueDecimal": 1.10401
+    },
+    {
+      "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+      "valueDecimal": 86.89599
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://github.com/synthetichealth/synthea",
+      "value": "7c4d042a-c9b2-4d5a-b0b7-a6b602c5825a"
+    },
+    {
+      "type": {
+        "text": "Medical Record Number",
+        "coding": [
+          {
+            "display": "Medical Record Number",
+            "code": "MR",
+            "system": "http://hl7.org/fhir/v2/0203"
+          }
+        ]
+      },
+      "value": "7c4d042a-c9b2-4d5a-b0b7-a6b602c5825a",
+      "system": "http://hospital.smarthealthit.org"
+    },
+    {
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "type": {
+        "text": "Social Security Number",
+        "coding": [
+          {
+            "display": "Social Security Number",
+            "code": "SB",
+            "system": "http://hl7.org/fhir/identifier-type"
+          }
+        ]
+      },
+      "value": "999-74-6911"
+    },
+    {
+      "type": {
+        "text": "Driver's License",
+        "coding": [
+          {
+            "code": "DL",
+            "system": "http://hl7.org/fhir/v2/0203",
+            "display": "Driver's License"
+          }
+        ]
+      },
+      "value": "S99982194",
+      "system": "urn:oid:2.16.840.1.113883.4.3.25"
+    },
+    {
+      "type": {
+        "text": "Passport Number",
+        "coding": [
+          {
+            "code": "PPN",
+            "system": "http://hl7.org/fhir/v2/0203",
+            "display": "Passport Number"
+          }
+        ]
+      },
+      "value": "X79250170X",
+      "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber"
+    }
+  ],
+  "id": "096724e0-4f46-4af9-8d25-2e5d6ec47526",
+  "name": [
+    {
+      "family": "Bins636",
+      "prefix": [
+        "Mr."
+      ],
+      "use": "official",
+      "given": [
+        "Aaron697"
+      ]
+    }
+  ]
+}
+604f6d2f-3cec-485d-8d45-4abca18281c2	0	2020-04-21T13:50:08.831343Z	Patient	created
+  {
+    "gender": "male",
+    "resourceType": "Patient",
+    "communication": [
+      {
+        "language": {
+          "text": "English",
+          "coding": [
+            {
+              "code": "en-US",
+              "system": "urn:ietf:bcp:47",
+              "display": "English"
+            }
+          ]
+        }
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "given": [
+          "Aaron697"
+        ],
+        "family": "Blick895",
+        "prefix": [
+          "Mr."
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "use": "home",
+        "value": "555-542-9057",
+        "system": "phone"
+      }
+    ],
+    "maritalStatus": {
+      "text": "M",
+      "coding": [
+        {
+          "code": "M",
+          "system": "http://hl7.org/fhir/v3/MaritalStatus",
+          "display": "M"
+        }
+      ]
+    },
+    "address": [
+      {
+        "city": "Kingston",
+        "line": [
+          "174 Hegmann Light Unit 67"
+        ],
+        "state": "Massachusetts",
+        "country": "US",
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "latitude",
+                "valueDecimal": -70.741942
+              },
+              {
+                "url": "longitude",
+                "valueDecimal": 41.987196
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+          }
+        ],
+        "postalCode": "02364"
+      }
+    ],
+    "birthDate": "1934-04-29",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [
+          {
+            "url": "ombCategory",
+            "valueCoding": {
+              "code": "2106-3",
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "display": "White"
+            }
+          },
+          {
+            "url": "text",
+            "valueString": "White"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [
+          {
+            "url": "ombCategory",
+            "valueCoding": {
+              "code": "2186-5",
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "display": "Not Hispanic or Latino"
+            }
+          },
+          {
+            "url": "text",
+            "valueString": "Not Hispanic or Latino"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+        "valueString": "Flavia315 Schuppe920"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode": "M"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
+        "valueAddress": {
+          "city": "Waltham",
+          "state": "Massachusetts",
+          "country": "US"
+        }
+      },
+      {
+        "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-FictionalPerson-extension",
+        "valueBoolean": true
+      },
+      {
+        "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-FathersName-extension",
+        "valueHumanName": {
+          "text": "Adolfo777 Blick895"
+        }
+      },
+      {
+        "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension",
+        "valueString": "999-97-3202"
+      },
+      {
+        "url": "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-Person-extension",
+        "valueReference": {
+          "reference": "Basic/e18b8375-76a9-4174-ba66-5c30601ce09f"
+        }
+      },
+      {
+        "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+        "valueDecimal": 0.566119
+      },
+      {
+        "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+        "valueDecimal": 82.433881
+      }
+    ],
+    "identifier": [
+      {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "cd2b2afa-59f2-4410-909e-c2ef571d1ef8"
+      },
+      {
+        "type": {
+          "text": "Medical Record Number",
+          "coding": [
+            {
+              "code": "MR",
+              "system": "http://hl7.org/fhir/v2/0203",
+              "display": "Medical Record Number"
+            }
+          ]
+        },
+        "value": "cd2b2afa-59f2-4410-909e-c2ef571d1ef8",
+        "system": "http://hospital.smarthealthit.org"
+      },
+      {
+        "type": {
+          "text": "Social Security Number",
+          "coding": [
+            {
+              "code": "SB",
+              "system": "http://hl7.org/fhir/identifier-type",
+              "display": "Social Security Number"
+            }
+          ]
+        },
+        "value": "999-97-3202",
+        "system": "http://hl7.org/fhir/sid/us-ssn"
+      },
+      {
+        "value": "S99943310",
+        "system": "urn:oid:2.16.840.1.113883.4.3.25",
+        "type": {
+          "text": "Driver's License",
+          "coding": [
+            {
+              "code": "DL",
+              "system": "http://hl7.org/fhir/v2/0203",
+              "display": "Driver's License"
+            }
+          ]
+        }
+      },
+      {
+        "type": {
+          "text": "Passport Number",
+          "coding": [
+            {
+              "display": "Passport Number",
+              "code": "PPN",
+              "system": "http://hl7.org/fhir/v2/0203"
+            }
+          ]
+        },
+        "value": "X8924864X",
+        "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber"
+      }
+    ],
+    "id": "604f6d2f-3cec-485d-8d45-4abca18281c2",
+    "meta": {
+      "profile": [
+        "http://standardhealthrecord.org/fhir/StructureDefinition/shr-entity-Patient"
+      ]
+    },
+    "text": {
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.0.0-33-g3ab9839e\n .   Person seed: 8153821336647737740  Population seed: 1534165146158</div>",
+      "status": "generated"
+    },
+    "multipleBirth": {
+      "boolean": false
+    }
+  }
+
+]
