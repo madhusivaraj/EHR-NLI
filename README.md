@@ -18,7 +18,7 @@ Dataset require
 
 - ```Validate:``` python TREQS/main.py --task validate
 
-- ```Test:``` python TREQs/main.py --task test
+- ```Test:``` python TREQS/main.py --task test
 
 ## Natural Language Generation
 
