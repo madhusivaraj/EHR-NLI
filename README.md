@@ -1,6 +1,12 @@
 # Natural Language Interface for Patients’ Electronic Health Records
 
-Presentation slide deck can be found [here](https://github.com/RevanthK/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). 
+Authors: Revanth Korrapolu and Madhumitha Sivaraj <br/>
+Course: CS 533, Natural Language Processing (Graduate Course)  <br/>
+Professor: [Dr. Karl Stratos](http://karlstratos.com/)  <br/>
+Semester: Spring 2020 <br/>
+
+Presentation slide deck can be found [here](https://github.com/madhusivaraj/EHR-NLI/blob/master/Final_Presentation_Deck.pdf). <br/>
+Final Paper can be found [here](https://github.com/madhusivaraj/EHR-NLI/blob/master/Natural_Language_Interface_for_Patients__Electronic_Health_Records.pdf).
 
 ## Seq2SQL
 
